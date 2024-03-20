@@ -35,8 +35,8 @@ func main() {
 	fmt.Println(firstName, lastName, birthdate)
 }
 
-func ouputUserDetails(firstName, lastName, birthdate string){
-	fmt.Println(firstName, lastName, birthdate)
+func ouputUserDetails(u user){
+	fmt.Println(u.firstName, u.lastName, u.birthDate)
 
 }
 
