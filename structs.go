@@ -32,7 +32,7 @@ func main() {
 
 	// ... do something awesome with that gathered data!
 
-	fmt.Println(firstName, lastName, birthdate)
+	ouputUserDetails(appUser)
 }
 
 func ouputUserDetails(u user){
