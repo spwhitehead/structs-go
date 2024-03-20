@@ -13,6 +13,18 @@ type user struct {		// The same as a class in python
 	createdAt time.Time
 }		
 
+func (u *user) ouputUserDetails() {
+	// ...
+	
+	fmt.Println(u.firstName, u.lastName, u.birthDate)
+
+}
+
+func (u *user) clearUserName() {
+	u.firstName = ""
+	u.lastName = ""
+}
+
 func main() {
 	userFirstName := getUserData("Please enter your first name: ")
 	userLastName := getUserData("Please enter your last name: ")
@@ -28,17 +40,14 @@ func main() {
 		age: 30,
 		createdAt: time.Now(),
 	}
-
+	appUser.ouputUserDetails()
+	appUser.clearUserName()
+	appUser.ouputUserDetails()
 
 	// ... do something awesome with that gathered data!
-
-	ouputUserDetails(appUser)
 }
 
-func ouputUserDetails(u user){
-	fmt.Println(u.firstName, u.lastName, u.birthDate)
 
-}
 
 func getUserData(promptText string) string {
 	fmt.Print(promptText)
