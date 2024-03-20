@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"example.com/structs/user"
+	"github.com/spwhitehead/structs-go/user"
 )
 
 
